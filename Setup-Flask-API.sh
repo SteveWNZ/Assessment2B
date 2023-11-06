@@ -22,7 +22,7 @@ cd tempdir
 # Create an image from the dockerfile
 docker build -t apiserver .
 # Run the image
-docker run -t -d -p 5050:5050 --name apirunning apiserver
+docker run -t -d -p 5050:5050 --name apirunning apiserver &
 # Check that the container got created
 docker ps -a
 
