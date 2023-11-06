@@ -4,12 +4,14 @@
 mkdir tempdir
 
 # Copy data from our host system to the docker container
-cp ./Assessment2B/* tempdir/.
+cp assessment_code.py tempdir/.
+cp network_equipment.json tempdir/.
+cp Setup-Flask-API.sh tempdir/.
 
 # Create a dockerfile to automate the container creation process
 echo "FROM python" >> tempdir/Dockerfile
 echo "RUN pip install flask" >> tempdir/Dockerfile
-echo "COPY  sample-app.sh /home/myapp/" >> tempdir/Dockerfile
+echo "COPY  Setup-Flask-API.sh /home/myapp/" >> tempdir/Dockerfile
 echo "COPY  assessment_code.py /home/myapp/" >> tempdir/Dockerfile
 echo "COPY  network_equipment.json /home/myapp/" >> tempdir/Dockerfile
 echo "EXPOSE 5050" >> tempdir/Dockerfile
