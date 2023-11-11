@@ -1,0 +1,14 @@
+{
+  "Equipment": [
+    {
+      "Firmware": 12.2,
+      "Hostname": "Christchurch_S264",
+      "Make": "Cisco",
+      "ManagementIP": "172.18.0.64",
+      "ManagementVlan": 100,
+      "Model": "2960X",
+      "Type": "Switch",
+      "id": 2
+    }
+  ]
+}
