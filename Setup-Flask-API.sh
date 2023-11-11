@@ -7,6 +7,10 @@ mkdir tempdir
 cp assessment_code.py tempdir/.
 cp network_equipment.json tempdir/.
 cp Setup-Flask-API.sh tempdir/.
+cp id1-new tempdir/.
+cp id1-new.py tempdir/.
+cp id1-old tempdir/.
+cp id1-old.py tempdir/.
 
 # Create a dockerfile to automate the container creation process
 echo "FROM python" >> tempdir/Dockerfile
@@ -14,6 +18,10 @@ echo "RUN pip install flask" >> tempdir/Dockerfile
 echo "COPY  Setup-Flask-API.sh /home/myapp/" >> tempdir/Dockerfile
 echo "COPY  assessment_code.py /home/myapp/" >> tempdir/Dockerfile
 echo "COPY  network_equipment.json /home/myapp/" >> tempdir/Dockerfile
+echo "COPY  id1-new /home/myapp/" >> tempdir/Dockerfile
+echo "COPY  id1-new.py /home/myapp/" >> tempdir/Dockerfile
+echo "COPY  id1-old /home/myapp/" >> tempdir/Dockerfile
+echo "COPY  id1-old.py /home/myapp/" >> tempdir/Dockerfile
 echo "EXPOSE 5050" >> tempdir/Dockerfile
 echo "CMD python /home/myapp/assessment_code.py" >> tempdir/Dockerfile
 
