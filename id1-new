@@ -1,0 +1,14 @@
+{
+  "Equipment": [
+    {
+      "Firmware": 100.6,
+      "Hostname": "",
+      "Make": "Cisco",
+      "ManagementIP": "",
+      "ManagementVlan": "",
+      "Model": "SRX110",
+      "Type": "",
+      "id": 1
+    }
+  ]
+}
