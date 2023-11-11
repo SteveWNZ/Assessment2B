@@ -5,7 +5,7 @@
       "Type": "",
       "Make": "Cisco",
       "Model": "SRX110",
-      "Firmware": "",
+      "Firmware": "1.0",
       "ManagementIP": "",
       "ManagementVlan": ""
    },
