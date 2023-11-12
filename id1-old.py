@@ -9,7 +9,7 @@ import json
 New_Value = float("1.0")
 
 # Create the API URL to use
-api_url = "http://localhost:5050/api/v1.0/equipment/1"
+api_url = "http://192.168.30.137:5050/api/v1.0/equipment/1"
     
 # Get Device Data
 device_data = requests.get(api_url)
