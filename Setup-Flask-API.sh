@@ -23,6 +23,7 @@ echo "COPY  id1-new.py /home/myapp/" >> tempdir/Dockerfile
 echo "COPY  id1-old /home/myapp/" >> tempdir/Dockerfile
 echo "COPY  id1-old.py /home/myapp/" >> tempdir/Dockerfile
 echo "EXPOSE 5050" >> tempdir/Dockerfile
+echo "EXPOSE 5051" >> tempdir/Dockerfile
 echo "CMD python /home/myapp/assessment_code.py" >> tempdir/Dockerfile
 
 # Build and run the container using the dockerfile above.
