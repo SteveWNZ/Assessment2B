@@ -23,7 +23,6 @@ echo "COPY  id1-new.py /home/myapp/" >> tempdir/Dockerfile
 echo "COPY  id1-old /home/myapp/" >> tempdir/Dockerfile
 echo "COPY  id1-old.py /home/myapp/" >> tempdir/Dockerfile
 echo "EXPOSE 5050" >> tempdir/Dockerfile
-echo "EXPOSE 5051" >> tempdir/Dockerfile
 echo "CMD python /home/myapp/assessment_code.py" >> tempdir/Dockerfile
 
 # Build and run the container using the dockerfile above.
@@ -31,7 +30,7 @@ cd tempdir
 # Create an image from the dockerfile
 docker build -t apiserver .
 # Run the image
-docker run -t -d -p 5050:5050 -p 5051:5051 --name apirunning apiserver &
+docker run -t -d -p 5050:5050 --name apirunning apiserver &
 # Check that the container got created
 docker ps -a
 
